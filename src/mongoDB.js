@@ -1,6 +1,3 @@
-const express = require("express");
-const app = express();
-const requests = require("requests");
 const mongoose = require("mongoose");
 const validator = require("validator");
 
@@ -126,7 +123,10 @@ const deleteDocument = async (id) => {
 
 /*-------------------------------------------EXTRA CODES----------------------------------------------*/
 
-/*app.get('/', (req, res) => {  
+/*
+const requests = require("requests");
+
+app.get('/', (req, res) => {  
   requests(`http://api.openweathermap.org/data/2.5/weather?q=${req.query.city}&appid=cd246ba455a7d58ca7609c23a80d8f84`)
         .on('data',  (chunk) => {
             const a = JSON.parse(chunk);
@@ -139,6 +139,6 @@ const deleteDocument = async (id) => {
             return;
         });          
 });
- app.listen(8000);*/
+app.listen(8000);*/
 
 /*-------------------------------------------EXTRA CODES----------------------------------------------*/
